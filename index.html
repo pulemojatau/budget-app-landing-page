@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BudgetFlow — Real-time personal finance control. Control your money, don't just track it." />
+  <meta property="og:title" content="BudgetFlow — Real-time Personal Finance Control" />
+  <meta property="og:description" content="BudgetFlow helps you control your money in real time, not just track it." />
+  <meta property="og:type" content="website" />
+  <title>BudgetFlow — Real-time Personal Finance Control</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAV ─────────────────────────────────────────────── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <a href="#" class="nav__logo" aria-label="BudgetFlow home">
+        <span class="logo-icon" aria-hidden="true">◈</span>
+        BudgetFlow
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#tech">Tech</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <a href="https://github.com/mojatau" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--sm">
+        GitHub
+      </a>
+      <button class="nav__hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-menu">
+      <a href="#features">Features</a>
+      <a href="#screenshots">Screenshots</a>
+      <a href="#tech">Tech</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/mojatau" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ─── HERO ──────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+        <div class="hero__grid"></div>
+      </div>
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="hero__badge">Personal Finance · Flutter App</div>
+          <h1 id="hero-heading" class="hero__title">
+            Real-time personal<br />
+            <span class="gradient-text">finance control</span>
+          </h1>
+          <p class="hero__desc">
+            BudgetFlow helps you control your money in real time, not just track it.
+            Know exactly where every dollar goes — before it's gone.
+          </p>
+          <div class="hero__actions">
+            <a href="https://github.com/pulemojatau/budget-app" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              View on GitHub
+            </a>
+            <a href="assets/apk/BudgetFlow-v1.0.apk" download="BudgetFlow-v1.0.apk" class="btn btn--secondary" aria-label="Download BudgetFlow APK">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download APK
+            </a>
+          </div>
+          <div class="hero__stats" role="list" aria-label="App highlights">
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-num">100%</span>
+              <span class="hero__stat-label">Offline</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-num">Real-time</span>
+              <span class="hero__stat-label">Updates</span>
+            </div>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <div class="hero__stat" role="listitem">
+              <span class="hero__stat-num">Flutter</span>
+              <span class="hero__stat-label">Cross-platform</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-mockup__frame">
+              <div class="phone-mockup__notch"></div>
+              <div class="phone-mockup__screen">
+                <img src="screenshots/dashboard1.jpeg" alt="BudgetFlow dashboard screenshot" loading="eager" />
+              </div>
+            </div>
+            <div class="phone-mockup__glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROBLEM ───────────────────────────────────────── -->
+    <section class="problem section" id="problem" aria-labelledby="problem-heading">
+      <div class="container">
+        <div class="section-label">The Problem</div>
+        <h2 id="problem-heading" class="section-title">
+          Most apps tell you what happened.<br />
+          <span class="gradient-text">BudgetFlow tells you what's happening.</span>
+        </h2>
+        <p class="section-desc">
+          Traditional budgeting apps are reactive — you log spending after the fact and discover at month-end that you overspent. That's not control, that's a post-mortem.
+        </p>
+
+        <div class="compare">
+          <div class="compare__card compare__card--bad">
+            <div class="compare__icon" aria-hidden="true">📊</div>
+            <h3>Tracking Money</h3>
+            <ul role="list">
+              <li>Log expenses after spending</li>
+              <li>Discover overspending too late</li>
+              <li>No real-time awareness</li>
+              <li>Reactive, not proactive</li>
+              <li>Budgets feel like spreadsheets</li>
+            </ul>
+          </div>
+          <div class="compare__vs" aria-hidden="true">VS</div>
+          <div class="compare__card compare__card--good">
+            <div class="compare__icon" aria-hidden="true">⚡</div>
+            <h3>Controlling Money</h3>
+            <ul role="list">
+              <li>See remaining budget instantly</li>
+              <li>Allocate before you spend</li>
+              <li>Real-time balance updates</li>
+              <li>Proactive decision-making</li>
+              <li>Money flows with intention</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SOLUTION ──────────────────────────────────────── -->
+    <section class="solution section" id="solution" aria-labelledby="solution-heading">
+      <div class="container">
+        <div class="section-label">The Solution</div>
+        <h2 id="solution-heading" class="section-title">
+          How BudgetFlow works
+        </h2>
+        <p class="section-desc">
+          A simple, structured flow that puts you in control of every rand or dollar from the moment it arrives.
+        </p>
+
+        <div class="flow" role="list" aria-label="BudgetFlow workflow steps">
+          <div class="flow__step" role="listitem">
+            <div class="flow__num" aria-hidden="true">01</div>
+            <div class="flow__icon" aria-hidden="true">💰</div>
+            <h3>Add Income</h3>
+            <p>Log your salary, freelance income, or any money coming in. BudgetFlow starts from what you actually have.</p>
+          </div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step" role="listitem">
+            <div class="flow__num" aria-hidden="true">02</div>
+            <div class="flow__icon" aria-hidden="true">🏠</div>
+            <h3>Deduct Fixed Expenses</h3>
+            <p>Rent, subscriptions, insurance — set them once. BudgetFlow automatically removes them from your available balance.</p>
+          </div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step" role="listitem">
+            <div class="flow__num" aria-hidden="true">03</div>
+            <div class="flow__icon" aria-hidden="true">📂</div>
+            <h3>Allocate to Categories</h3>
+            <p>Distribute what's left into spending categories — groceries, transport, entertainment. You decide the limits.</p>
+          </div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step" role="listitem">
+            <div class="flow__num" aria-hidden="true">04</div>
+            <div class="flow__icon" aria-hidden="true">📉</div>
+            <h3>Track in Real Time</h3>
+            <p>Every purchase updates your category balance instantly. No surprises, no end-of-month shock.</p>
+          </div>
+          <div class="flow__arrow" aria-hidden="true">→</div>
+          <div class="flow__step" role="listitem">
+            <div class="flow__num" aria-hidden="true">05</div>
+            <div class="flow__icon" aria-hidden="true">🎯</div>
+            <h3>Hit Your Goals</h3>
+            <p>Set savings targets and watch your progress. BudgetFlow keeps your goals visible so you stay motivated.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FEATURES ──────────────────────────────────────── -->
+    <section class="features section" id="features" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="section-label">Features</div>
+        <h2 id="features-heading" class="section-title">Everything you need, nothing you don't</h2>
+        <p class="section-desc">Built lean and focused. No bloat, no subscriptions, no cloud required.</p>
+
+        <div class="features__grid" role="list">
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__icon" aria-hidden="true">⚡</div>
+            <h3>Real-time Budget Updates</h3>
+            <p>Your available balance updates the moment you log a transaction. Always know exactly what you have left.</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__icon" aria-hidden="true">📡</div>
+            <h3>Offline-first Design</h3>
+            <p>No internet? No problem. All your data lives on your device. BudgetFlow works anywhere, anytime.</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__icon" aria-hidden="true">📂</div>
+            <h3>Category-based Control</h3>
+            <p>Allocate money to custom spending categories. See at a glance which buckets are full and which are running low.</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__icon" aria-hidden="true">🎯</div>
+            <h3>Savings Goals</h3>
+            <p>Set a target, track your progress. Whether it's an emergency fund or a vacation, your goals stay front and center.</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__icon" aria-hidden="true">🧾</div>
+            <h3>Transaction History</h3>
+            <p>Full log of every transaction with category tags. Review your spending patterns and make smarter decisions.</p>
+          </article>
+
+          <article class="feature-card" role="listitem">
+            <div class="feature-card__icon" aria-hidden="true">🔄</div>
+            <h3>Monthly Reset System</h3>
+            <p>Fresh start every month. Budgets reset automatically so you're always working with current numbers.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SCREENSHOTS ───────────────────────────────────── -->
+    <section class="screenshots section" id="screenshots" aria-labelledby="screenshots-heading">
+      <div class="container">
+        <div class="section-label">Screenshots</div>
+        <h2 id="screenshots-heading" class="section-title">See it in action</h2>
+        <p class="section-desc">A clean, focused UI designed for daily use — not just occasional check-ins.</p>
+
+        <div class="screenshots__grid" role="list" aria-label="App screenshots">
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/dashboard1.jpeg" alt="BudgetFlow main dashboard showing budget overview" loading="lazy" />
+            <figcaption>Dashboard</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/dashboard2.jpeg" alt="BudgetFlow secondary dashboard view" loading="lazy" />
+            <figcaption>Dashboard Overview</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/income.jpeg" alt="Income tracking screen" loading="lazy" />
+            <figcaption>Income Tracking</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/fixed-expenses.jpeg" alt="Fixed expenses management screen" loading="lazy" />
+            <figcaption>Fixed Expenses</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/budget-allocation.jpeg" alt="Budget allocation across categories" loading="lazy" />
+            <figcaption>Budget Allocation</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/categories-overview.jpeg" alt="Categories overview with spending limits" loading="lazy" />
+            <figcaption>Categories</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/spending.jpeg" alt="Real-time spending tracker" loading="lazy" />
+            <figcaption>Spending Tracker</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/adding-funds.jpeg" alt="Adding funds to a category" loading="lazy" />
+            <figcaption>Adding Funds</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/goals.jpeg" alt="Savings goals progress screen" loading="lazy" />
+            <figcaption>Savings Goals</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/transaction-histrory.jpeg" alt="Transaction history log" loading="lazy" />
+            <figcaption>Transaction History</figcaption>
+          </figure>
+
+          <figure class="screenshot-item" role="listitem">
+            <img src="screenshots/settings.jpeg" alt="App settings screen" loading="lazy" />
+            <figcaption>Settings</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── TECH STACK ────────────────────────────────────── -->
+    <section class="tech section" id="tech" aria-labelledby="tech-heading">
+      <div class="container">
+        <div class="section-label">Tech Stack</div>
+        <h2 id="tech-heading" class="section-title">Built with the right tools</h2>
+        <p class="section-desc">Chosen for performance, reliability, and a great developer experience.</p>
+
+        <div class="tech__grid" role="list" aria-label="Technologies used">
+
+          <div class="tech-card" role="listitem">
+            <div class="tech-card__logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M14.314 0L2.3 12 6 15.7 21.684 0h-7.37zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z" fill="#54C5F8"/>
+              </svg>
+            </div>
+            <h3>Flutter</h3>
+            <p>Cross-platform UI framework for building natively compiled mobile apps from a single codebase.</p>
+            <span class="tech-card__tag">Framework</span>
+          </div>
+
+          <div class="tech-card" role="listitem">
+            <div class="tech-card__logo" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M4.105 4.105S9.158 1.58 11.684.316a3.079 3.079 0 0 1 1.481-.315c.766.047 1.677.788 1.677.788L24 9.948v9.789l-9.158 4.263-5.789-3.158 9.158-4.263V7.737L4.105 4.105z" fill="#00B4AB"/>
+                <path d="M4.105 4.105L13.263 8.368v9.789L4.105 13.894V4.105z" fill="#00B4AB" opacity=".5"/>
+              </svg>
+            </div>
+            <h3>Dart</h3>
+            <p>Strongly typed, fast language optimised for client-side development. Powers every line of BudgetFlow.</p>
+            <span class="tech-card__tag">Language</span>
+          </div>
+
+          <div class="tech-card" role="listitem">
+            <div class="tech-card__logo tech-card__logo--text" aria-hidden="true">P</div>
+            <h3>Provider</h3>
+            <p>Lightweight, recommended state management solution for Flutter. Keeps UI and business logic cleanly separated.</p>
+            <span class="tech-card__tag">State Management</span>
+          </div>
+
+          <div class="tech-card" role="listitem">
+            <div class="tech-card__logo tech-card__logo--text" aria-hidden="true">💾</div>
+            <h3>Local Storage</h3>
+            <p>All data stored locally on device using SharedPreferences and structured JSON. No cloud, no account required.</p>
+            <span class="tech-card__tag">Persistence</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ──────────────────────────────────────────── -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__content">
+            <div class="section-label">About the Developer</div>
+            <h2 id="about-heading" class="section-title" style="text-align:left;">
+              Built by a developer who<br />
+              <span class="gradient-text">solves real problems</span>
+            </h2>
+            <p class="about__bio">
+              Hi, I'm <strong>Motlalepula Mojatau</strong> — a software developer focused on building practical, real-world applications that people actually use. BudgetFlow started as a personal need: I wanted a finance tool that felt like control, not just record-keeping.
+            </p>
+            <p class="about__bio">
+              I build with Flutter, Dart, and modern web technologies. I care about clean code, thoughtful UX, and shipping things that work.
+            </p>
+            <div class="about__links">
+              <a href="https://github.com/pulemojatau" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub Profile
+              </a>
+              <a href="https://motlalepula-mojatau-portfolio-website.vercel.app/" target="_blank" class="btn btn--outline" aria-label="Portfolio (coming soon)">
+                Portfolio
+               
+              </a>
+            </div>
+          </div>
+          <div class="about__card" aria-hidden="true">
+            <div class="about__avatar">MM</div>
+            <div class="about__name">Motlalepula Mojatau</div>
+            <div class="about__role">Software Developer</div>
+            <div class="about__tags">
+              <span>Flutter</span>
+              <span>Dart</span>
+              <span>Mobile</span>
+              <span>Web</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="nav__logo" aria-label="BudgetFlow home">
+          <span class="logo-icon" aria-hidden="true">◈</span>
+          BudgetFlow
+        </a>
+        <p>Real-time personal finance control.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#about">About</a>
+        <a href="https://github.com/pulemojatau/budget-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <div class="footer__copy">
+        <p>© 2026 Motlalepula Mojatau. Built with Flutter &amp; deployed on Cloudflare Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
