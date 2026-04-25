@@ -43,3 +43,6 @@ out/
 # ── Cloudflare Pages ──────────────────────────────────────
 .wrangler/
 .dev.vars
+
+# ── Large binary assets (host APK on GitHub Releases instead) ──
+assets/apk/
